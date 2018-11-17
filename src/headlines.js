@@ -1,11 +1,11 @@
 (function(exports) {
 
 function renderHeadlines(allArticles) {
-  var html = "<ul>";
+  var html = "";
   allArticles.forEach(function(article) {
-    html += `<li><div class="headline" id='${article.id}'>${article.webTitle}</li>`
+    html += `<li><div name='${article.id}'><a href='#articles/${article.id}'>${article.webTitle}</li>`
   })
-  return html + "</ul>"
+  return html
 }
 
 exports.renderHeadlines = renderHeadlines
