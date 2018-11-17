@@ -1,5 +1,2 @@
-// import NewsFeed from 'newsFeed';
-//
-// const controller = new NewsFeed();
-//
-// console.log(controller.getNews())
+const controller = new NewsFeed();
+controller.getNews()
